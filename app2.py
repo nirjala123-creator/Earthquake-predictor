@@ -2,8 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-model = pickle.load(open('model.pkl', 'rb'))
-
+model = pickle.load(open('regression_model.pkl', 'rb'))
 st.title("Earthquake Magnitude Predictor")
 
 latitude = st.number_input("Latitude")
